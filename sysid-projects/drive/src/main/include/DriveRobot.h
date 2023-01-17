@@ -16,7 +16,7 @@
 #include <frc/TimedRobot.h>
 #include <frc/interfaces/Gyro.h>
 #include <frc/motorcontrol/MotorController.h>
-#include <rev/CANSparkMax.h>
+// #include <rev/CANSparkMax.h>
 #include <wpi/json.h>
 #include <wpi/raw_istream.h>
 
@@ -50,13 +50,13 @@ class DriveRobot : public frc::TimedRobot {
   std::function<double()> m_gyroPosition;
   std::function<double()> m_gyroRate;
   wpi::json m_json;
-  std::unique_ptr<rev::SparkMaxRelativeEncoder> m_leftRevEncoderPort;
-  std::unique_ptr<rev::SparkMaxAlternateEncoder> m_leftRevDataPort;
-  std::unique_ptr<rev::SparkMaxRelativeEncoder> m_rightRevEncoderPort;
-  std::unique_ptr<rev::SparkMaxAlternateEncoder> m_rightRevDataPort;
+  // std::unique_ptr<rev::SparkMaxRelativeEncoder> m_leftRevEncoderPort;
+  // std::unique_ptr<rev::SparkMaxAlternateEncoder> m_leftRevDataPort;
+  // std::unique_ptr<rev::SparkMaxRelativeEncoder> m_rightRevEncoderPort;
+  // std::unique_ptr<rev::SparkMaxAlternateEncoder> m_rightRevDataPort;
   std::unique_ptr<frc::Encoder> m_leftEncoder;
   std::unique_ptr<frc::Encoder> m_rightEncoder;
-  std::unique_ptr<frc::Gyro> m_gyro;
+  std::unique_ptr<frc::Gyro> m_gyro;szxrhtyuikguhijo
   std::unique_ptr<frc::ADIS16448_IMU> m_ADIS16448Gyro;
   std::unique_ptr<frc::ADIS16470_IMU> m_ADIS16470Gyro;
 
